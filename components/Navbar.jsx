@@ -22,16 +22,16 @@ const Navbar = () => {
           </div>  
         </Link>
         <div className="hidden md:flex space-x-4 items-center">
-          <Link href="/">
+          <Link href="/" className="no-underline transition-all duration-300 ease-in-out hover:font-bold hover:scale-105 inline-block">
             Home
           </Link>
-          <Link href="/about">
+          <Link href="/about" className="no-underline transition-all duration-300 ease-in-out hover:font-bold hover:scale-105 inline-block">
             About
           </Link>
-          <Link href="/blog">
+          <Link href="/blog" className="no-underline transition-all duration-300 ease-in-out hover:font-bold hover:scale-105 inline-block">
             Blog
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" className="no-underline transition-all duration-300 ease-in-out hover:font-bold hover:scale-105 inline-block">
             Contact
           </Link>
           <div className="flex items-center">
@@ -41,6 +41,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className="md:hidden">
+          <span className="mx-2">
+            <ModeToggle />
+          </span>
           <Sheet>
             <SheetTrigger>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
